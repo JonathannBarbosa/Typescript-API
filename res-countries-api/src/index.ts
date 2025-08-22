@@ -5,9 +5,19 @@ import { Region } from "./interfaces/country";
 
 import express from "express";
 import router from "./routes";
+import dotenv from "dotenv";   // Importação do doetenv após instalação
+
 
 const app = express();
-const PORT = 3000;
+const PORT = 3000;       
+
+// execução para testar o funcionamento do dotenv          
+dotenv.config();
+
+console.log(process.env)
+console.log("PORT: ", process.env.PORT)
+console.log("API_KEY: ", process.env.API_KEY)
+
 
 app.use(express.json());
 app.use(router);

@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "star": "node dist/index.js",
-    "build": "tsc",
+    "build": "tsc", 
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    
   },
   "keywords": [],
   "author": "",
